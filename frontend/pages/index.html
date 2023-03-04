@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <script defer src="../index.js"></script>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <script defer src="../javascripts/index.js"></script>
     <title>History Mystery</title>
   </head>
   <body>
@@ -25,9 +25,15 @@
       <button id="start-btn">Let's Learn!</button>
     </div>
     <div id="username-modal" class="modal">
-      <div class="username-modal-content">
+      <div class="modal-content">
           <p>This username has already been taken!</p>
-          <button id="close-user-modal-btn">Continue</button>
+          <button id="close-user-modal-btn" class="close-modal-btn">Continue</button>
+      </div>
+    </div>
+    <div id="error-modal" class="modal">
+      <div class="modal-content">
+          <p>A username is required to play!</p>
+          <button id="close-error-modal-btn" class="close-modal-btn">Continue</button>
       </div>
     </div>
     <button id="clear-cache-btn">Clear Cache</button>
