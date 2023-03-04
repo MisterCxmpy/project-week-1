@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter&family=Tilt+Neon&family=Zeyada&display=swap');
 
 body {
   background-image: linear-gradient(to right, #8360c3, #2ebf91);
@@ -69,7 +69,7 @@ body {
   margin: auto;
   color: #7E7E7E;
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Tilt Neon', cursive;
   transition: all 0.5s ease-in-out;
 }
 
@@ -96,6 +96,7 @@ body {
   text-align: center;
   font-size: 1.6rem;
   font-style: italic;
+  font-family: 'Tilt Neon', cursive;
   color: #3d3d3d;
   transition: all 0.15s ease-in-out;
   border-radius: 1rem;
@@ -121,3 +122,44 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
+#username-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  width: 400px;
+  height: 200px;
+  padding: 35px;
+  border-radius: 25px;
+  border: #232323 2px solid;
+}
+
+.username-modal-content {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: 'Tilt Neon', cursive;
+  color: #3d3d3d;
+}
+
+#close-user-modal-btn {
+  background-color: rgb(107, 240, 158);
+  margin: auto;
+  display: block;
+  width: 300px;
+  margin-top: 40px;
+  height: 50px;
+  border: none;
+  outline: 4px solid rgb(66, 66, 66);
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-family: 'Tilt Neon', cursive;
+  color: #3d3d3d;
+  transition: all 0.15s ease-in-out;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+

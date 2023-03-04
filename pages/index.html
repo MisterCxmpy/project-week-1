@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
     <script defer src="../index.js"></script>
     <title>History Mystery</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1 id="title">History<br>Mystery</h1>
+      <h1 id="title">History<br />Mystery</h1>
     </header>
     <div id="container">
-        <form id="nick-name-form">
-            <input id="nick-name-input" onkeypress="return event.keyCode != 13;" type="text" required>
-            <span id="nick-name-label">Nickname</span>
-        </form>
-        <button id="start-btn">Let's Learn!</button>
+      <form id="nick-name-form">
+        <input
+          id="nick-name-input"
+          onkeypress="return event.keyCode != 13;"
+          type="text"
+          required
+        />
+        <span id="nick-name-label">Nickname</span>
+      </form>
+      <button id="start-btn">Let's Learn!</button>
     </div>
-</body>
+    <div id="username-modal" class="modal">
+      <div class="username-modal-content">
+          <p>This username has already been taken!</p>
+          <button id="close-user-modal-btn">Continue</button>
+      </div>
+    </div>
+  </body>
 </html>
