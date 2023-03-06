@@ -213,111 +213,111 @@
             "wrong3": "Battle of Agincourt"
         }
     },
-    "era3": {
+    "warringstatesofchina": {
         "question1": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
+            "question": "Which philosopher and teacher founded Confucianism during the Warring States period?",
+            "answer": "Confucius",
+            "wrong1": "Laozi",
+            "wrong2": "Mozi",
+            "wrong3": "Mencius"
         },
         "question2": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
+            "question": "Which state was known as the 'Land of the Fierce' during the Warring States period?",
+            "answer": "State of Zhao",
+            "wrong1": "State of Chu",
+            "wrong2": "State of Qi",
+            "wrong3": "State of Yan"
         },
         "question3": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
+            "question": "Which general of the State of Qi was famous for his tactics of luring the enemy into ambushes during the Warring States period?",
+            "answer": "Sun Bin",
+            "wrong1": "Sun Tzu",
+            "wrong2": "Zhuge Liang",
+            "wrong3": "Wei Liaozi"
         },
         "question4": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
+            "question": "Which state was known for its iron weapons and coins during the Warring States period?",
+            "answer": "State of Qin",
+            "wrong1": "State of Han",
+            "wrong2": "State of Wei",
+            "wrong3": "State of Yan"
         },
         "question5": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
+            "question": "Which battle resulted in the defeat of the State of Chu by the State of Qin during the Warring States period?",
+            "answer": "Battle of Changping",
+            "wrong1": "Battle of Maling",
+            "wrong2": "Battle of Guiling",
+            "wrong3": "Battle of Julu"
         },
         "question6": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
-        },
-        "question7": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
+            "question": "Which philosopher advocated for the use of legalism to govern the state during the Warring States period?",
+            "answer": "Han Feizi",
+            "wrong1": "Zhuangzi",
+            "wrong2": "Xunzi",
+            "wrong3": "Mozi"
+          },
+          "question7": {
+            "question": "Which state was known for its powerful cavalry during the Warring States period?",
+            "answer": "State of Zhao",
+            "wrong1": "State of Qin",
+            "wrong2": "State of Wei",
+            "wrong3": "State of Yan"
         },
         "question8": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
+            "question": "Which battle resulted in the defeat of the State of Wei by the State of Qi during the Warring States period?",
+            "answer": "Battle of Guiling",
+            "wrong1": "Battle of Maling",
+            "wrong2": "Battle of Changping",
+            "wrong3": "Battle of Julu"
         },
         "question9": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
+            "question": "Which philosopher advocated for the use of naturalism and simplicity in governance during the Warring States period?",
+            "answer": "Laozi",
+            "wrong1": "Confucius",
+            "wrong2": "Mozi",
+            "wrong3": "Han Feizi"
         },
         "question10": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
+            "question": "Which state was known for its powerful navy during the Warring States period?",
+            "answer": "State of Chu",
+            "wrong1": "State of Qin",
+            "wrong2": "State of Qi",
+            "wrong3": "State of Yan"
         },
         "question11": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
+            "question": "Which state was known for its powerful navy during the Warring States period?",
+            "answer": "State of Chu",
+            "wrong1": "State of Qin",
+            "wrong2": "State of Qi",
+            "wrong3": "State of Yan"
         },
         "question12": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
+            "question": "Which state was known for its skilled archers during the Warring States period?",
+            "answer": "State of Qi",
+            "wrong1": "State of Qin",
+            "wrong2": "State of Zhao",
+            "wrong3": "State of Yan"
         },
         "question13": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
+            "question": "Which general of the State of Qi was famous for his tactics of attacking the enemy's weak points during the Warring States period?",
+            "answer": "Tian Ji",
+            "wrong1": "Sun Tzu",
+            "wrong2": "Zhuge Liang",
+            "wrong3": "Wei Liaozi"
         },
         "question14": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
+            "question": "Which state was known for its powerful chariots during the Warring States period?",
+            "answer": "State of Wei",
+            "wrong1": "State of Qin",
+            "wrong2": "State of Chu",
+            "wrong3": "State of Yan"
         },
         "question15": {
-            "question": "",
-            "answer": "",
-            "wrong1": "",
-            "wrong2": "",
-            "wrong3": ""
-        }
+            "question": "Which battle resulted in the defeat of the State of Zhao by the State of Qin during the Warring States period?",
+            "answer": "Battle of Changping",
+            "wrong1": "Battle of Maling",
+            "wrong2": "Battle of Guiling",
+            "wrong3": "Battle of Julu"
+        }    
     }
 }}
