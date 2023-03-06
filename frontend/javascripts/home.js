@@ -4,6 +4,7 @@ const difficultyModal = document.querySelector("#difficulty-modal")
 const difficultyBtns = document.querySelectorAll(".difficulty-btn")
 
 let era = null
+let difficulty = null
 
 const openModal = (e) => {
   difficultyModal.style.display = "block"
@@ -16,7 +17,10 @@ const closeModal = (e) => {
 }
 
 const loadQuizPage = (e) => {
-  //window.location.href = `quiz.html/${era}/${e.target.dataset.difficulty}`;
+  difficulty = e.target.dataset.difficulty
+  localStorage.setItem("era", era)
+  localStorage.setItem("difficulty", difficulty)
+  window.location.href = `quiz.html`;
 }
 
 closeDifficultyModal.addEventListener("click", closeModal)
