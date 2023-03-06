@@ -164,6 +164,10 @@ body {
   cursor: pointer;
 }
 
+.error {
+  background-color: rgb(226, 100, 100);
+}
+
 #clear-cache-btn {
   position: absolute;
   right:    5px;

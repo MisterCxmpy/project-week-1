@@ -1,0 +1,325 @@
+{
+  "quiz": {
+    "ww1and2": {
+      "question1": {
+        "question": "Which country was the first to declare war in World War I?",
+        "answer": "Austria-Hungary",
+        "wrong1": "Germany",
+        "wrong2": "France",
+        "wrong3": "Russia"
+      },
+      "question2": {
+        "question": "What was the name of the alliance that included Germany, Austria-Hungary, and Italy during World War I?",
+        "answer": "Central Powers",
+        "wrong1": "Allied Powers",
+        "wrong2": "Triple Entente",
+        "wrong3": "Axis Powers"
+      },
+      "question3": {
+        "question": "What was the main cause of World War I?",
+        "answer": "Assassination of Archduke Franz Ferdinand",
+        "wrong1": "Rise of fascism",
+        "wrong2": "Economic competition",
+        "wrong3": "Nationalism"
+      },
+      "question4": {
+        "question": "Which country did not participate in World War I?",
+        "answer": "Spain",
+        "wrong1": "United States",
+        "wrong2": "Japan",
+        "wrong3": "Canada"
+      },
+      "question5": {
+        "question": "What was the name of the treaty that ended World War I?",
+        "answer": "Treaty of Versailles",
+        "wrong1": "Treaty of Paris",
+        "wrong2": "Treaty of Brest-Litovsk",
+        "wrong3": "Munich Agreement"
+      },
+      "question6": {
+        "question": "What was the name of the Nazi party leader during World War II?",
+        "answer": "Adolf Hitler",
+        "wrong1": "Benito Mussolini",
+        "wrong2": "Winston Churchill",
+        "wrong3": "Joseph Stalin"
+      },
+      "question7": {
+        "question": "Which country was invaded by Germany to start World War II?",
+        "answer": "Poland",
+        "wrong1": "France",
+        "wrong2": "Soviet Union",
+        "wrong3": "United Kingdom"
+      },
+      "question8": {
+        "question": "What was the name of the battle that was a turning point in the war in Europe, leading to the defeat of Nazi Germany?",
+        "answer": "Battle of Stalingrad",
+        "wrong1": "Battle of the Bulge",
+        "wrong2": "D-Day Invasion",
+        "wrong3": "Battle of Kursk"
+      },
+      "question9": {
+        "question": "What was the code name for the atomic bomb project during World War II?",
+        "answer": "Manhattan Project",
+        "wrong1": "Operation Overlord",
+        "wrong2": "Project Phoenix",
+        "wrong3": "Project X"
+      },
+      "question10": {
+        "question": "What was the name of the meeting between the leaders of the United States, Soviet Union, and United Kingdom to discuss the post-war reorganization of Europe?",
+        "answer": "Yalta Conference",
+        "wrong1": "Potsdam Conference",
+        "wrong2": "Tehran Conference",
+        "wrong3": "Casablanca Conference"
+      },
+      "question11": {
+        "question": "What was the name of the policy of non-interference adopted by the United States towards Europe during World War II?",
+        "answer": "Isolationism",
+        "wrong1": "Interventionism",
+        "wrong2": "Internationalism",
+        "wrong3": "Imperialism"
+      },
+      "question12": {
+        "question": "What was the name of the battle that was fought on the Western Front during World War I, lasting over 4 years?",
+        "answer": "Battle of the Somme",
+        "wrong1": "Battle of Verdun",
+        "wrong2": "Battle of Jutland",
+        "wrong3": "Battle of Gallipoli"
+      },
+      "question13": {
+        "question": "What was the name of the Allied invasion of Normandy, France during World War II?",
+        "answer": "D-Day Invasion",
+        "wrong1": "Operation Market Garden",
+        "wrong2": "Operation Torch",
+        "wrong3": "Battle of the Bulge"
+      },
+      "question14": {
+        "question": "What was the name of the policy of appeasement adopted by Western powers towards Germany prior to the outbreak of World War II?",
+        "answer": "Munich Agreement",
+        "wrong1": "Treaty of Versailles",
+        "wrong2": "Kellogg-Briand Pact",
+        "wrong3": "Locarno Treaties"
+      },
+      "question15": {
+        "question": "What was the name of the series of military tribunals held by the Allied forces after World War II to prosecute Nazi war criminals?",
+        "answer": "Nuremberg Trials",
+        "wrong1": "Hague Conventions",
+        "wrong2": "Geneva Conventions",
+        "wrong3": "Tokyo Trials"
+      }
+    },
+    "medieval": {
+      "question1": {
+        "question": "The medieval period started with the fall of which major European city?",
+        "answer": "Rome",
+        "wrong1": "Paris",
+        "wrong2": "Constantinople",
+        "wrong3": "London"
+      },
+      "question2": {
+        "question": "Who quickly became the dominant power in Europe when the medieval age began in the 5th century?",
+        "answer": "The Catholic Church",
+        "wrong1": "The Vikings",
+        "wrong2": "The Huns",
+        "wrong3": "The Islamic state"
+      },
+      "question3": {
+        "question": "Considered the father of the future French and German monarchies, which Frankish leader was named emperor by Pope Leo III in 800 AD?",
+        "answer": "Charles I",
+        "wrong1": "Theuderic III",
+        "wrong2": "Dagobert I",
+        "wrong3": "Clovis I"
+      },
+      "question4": {
+        "question": "To obtain money, the Church initiated a tithe that was how much of someone's income?",
+        "answer": "10 percent",
+        "wrong1": "5 percent",
+        "wrong2": "20 percent",
+        "wrong3": "40 percent"
+      },
+      "question5": {
+        "question": "Can you identify which group was responsible for tilling the land for kings and lords?",
+        "answer": "Serfs",
+        "wrong1": "Squires",
+        "wrong2": "Vassals",
+        "wrong3": "Bishops"
+      },
+      "question6": {
+        "question": "What name was given to the eastern empire that survived after the fall of the Western Roman Empire?",
+        "answer": "Byzantine Empire",
+        "wrong1": "Akkadian Empire",
+        "wrong2": "Ottoman Empire",
+        "wrong3": "Achaemenid Empire"
+      },
+      "question7": {
+        "question": "The plague that devastated Europe was often referred to as what?",
+        "answer": "Black Death",
+        "wrong1": "Leprosy",
+        "wrong2": "The Curse",
+        "wrong3": "Yellow fever"
+      },
+      "question8": {
+        "question": "Do you know which English king famously signed the Magna Carta?",
+        "answer": "King John",
+        "wrong1": "King Richard I",
+        "wrong2": "King Philip II",
+        "wrong3": "King Henry III"
+      },
+      "question9": {
+        "question": "Where did monks live together so they could turn their full attention to worshiping God?",
+        "answer": "A monastery",
+        "wrong1": "A castle",
+        "wrong2": "A moat",
+        "wrong3": "A manor"
+      },
+      "question10": {
+        "question": "To keep themselves in line, knights were responsible for following which code of honor?",
+        "answer": "Chivalry",
+        "wrong1": "Danelaw",
+        "wrong2": "Bushido",
+        "wrong3": "Visigothic Code"
+      },
+      "question11": {
+        "question": "Needing to divide territory under their rule, kings would provide a lord with what?",
+        "answer": "Fief",
+        "wrong1": "Keep",
+        "wrong2": "Moat",
+        "wrong3": "Manor"
+      },
+      "question12": {
+        "question": "A master could promote an apprentice to which position so they could earn a wage?",
+        "answer": "Journeyman",
+        "wrong1": "Page",
+        "wrong2": "Squire",
+        "wrong3": "Baron"
+      },
+      "question13": {
+        "question": "Are you familiar with where the Vikings originated?",
+        "answer": "Scandinavia",
+        "wrong1": "Normandy",
+        "wrong2": "Iberia",
+        "wrong3": "Sicily"
+      },
+      "question14": {
+        "question": "Who would pledge their allegiance to a lord for land and protection?",
+        "answer": "Vassal",
+        "wrong1": "Page",
+        "wrong2": "Bishop",
+        "wrong3": "Squire"
+      },
+      "question15": {
+        "question": "During which battle did Frankish forces defeat an invading Muslim force in 732 AD?",
+        "answer": "Battle of Tours",
+        "wrong1": "Battle of Poitiers",
+        "wrong2": "Battle of Hastings",
+        "wrong3": "Battle of Agincourt"
+      }
+    },
+    "warringstatesofchina": {
+      "question1": {
+        "question": "Which philosopher and teacher founded Confucianism during the Warring States period?",
+        "answer": "Confucius",
+        "wrong1": "Laozi",
+        "wrong2": "Mozi",
+        "wrong3": "Mencius"
+      },
+      "question2": {
+        "question": "Which state was known as the 'Land of the Fierce' during the Warring States period?",
+        "answer": "State of Zhao",
+        "wrong1": "State of Chu",
+        "wrong2": "State of Qi",
+        "wrong3": "State of Yan"
+      },
+      "question3": {
+        "question": "Which general of the State of Qi was famous for his tactics of luring the enemy into ambushes during the Warring States period?",
+        "answer": "Sun Bin",
+        "wrong1": "Sun Tzu",
+        "wrong2": "Zhuge Liang",
+        "wrong3": "Wei Liaozi"
+      },
+      "question4": {
+        "question": "Which state was known for its iron weapons and coins during the Warring States period?",
+        "answer": "State of Qin",
+        "wrong1": "State of Han",
+        "wrong2": "State of Wei",
+        "wrong3": "State of Yan"
+      },
+      "question5": {
+        "question": "Which battle resulted in the defeat of the State of Chu by the State of Qin during the Warring States period?",
+        "answer": "Battle of Changping",
+        "wrong1": "Battle of Maling",
+        "wrong2": "Battle of Guiling",
+        "wrong3": "Battle of Julu"
+      },
+      "question6": {
+        "question": "Which philosopher advocated for the use of legalism to govern the state during the Warring States period?",
+        "answer": "Han Feizi",
+        "wrong1": "Zhuangzi",
+        "wrong2": "Xunzi",
+        "wrong3": "Mozi"
+      },
+      "question7": {
+        "question": "Which state was known for its powerful cavalry during the Warring States period?",
+        "answer": "State of Zhao",
+        "wrong1": "State of Qin",
+        "wrong2": "State of Wei",
+        "wrong3": "State of Yan"
+      },
+      "question8": {
+        "question": "Which battle resulted in the defeat of the State of Wei by the State of Qi during the Warring States period?",
+        "answer": "Battle of Guiling",
+        "wrong1": "Battle of Maling",
+        "wrong2": "Battle of Changping",
+        "wrong3": "Battle of Julu"
+      },
+      "question9": {
+        "question": "Which philosopher advocated for the use of naturalism and simplicity in governance during the Warring States period?",
+        "answer": "Laozi",
+        "wrong1": "Confucius",
+        "wrong2": "Mozi",
+        "wrong3": "Han Feizi"
+      },
+      "question10": {
+        "question": "Which state was known for its powerful navy during the Warring States period?",
+        "answer": "State of Chu",
+        "wrong1": "State of Qin",
+        "wrong2": "State of Qi",
+        "wrong3": "State of Yan"
+      },
+      "question11": {
+        "question": "Which state was known for its powerful navy during the Warring States period?",
+        "answer": "State of Chu",
+        "wrong1": "State of Qin",
+        "wrong2": "State of Qi",
+        "wrong3": "State of Yan"
+      },
+      "question12": {
+        "question": "Which state was known for its skilled archers during the Warring States period?",
+        "answer": "State of Qi",
+        "wrong1": "State of Qin",
+        "wrong2": "State of Zhao",
+        "wrong3": "State of Yan"
+      },
+      "question13": {
+        "question": "Which general of the State of Qi was famous for his tactics of attacking the enemy's weak points during the Warring States period?",
+        "answer": "Tian Ji",
+        "wrong1": "Sun Tzu",
+        "wrong2": "Zhuge Liang",
+        "wrong3": "Wei Liaozi"
+      },
+      "question14": {
+        "question": "Which state was known for its powerful chariots during the Warring States period?",
+        "answer": "State of Wei",
+        "wrong1": "State of Qin",
+        "wrong2": "State of Chu",
+        "wrong3": "State of Yan"
+      },
+      "question15": {
+        "question": "Which battle resulted in the defeat of the State of Zhao by the State of Qin during the Warring States period?",
+        "answer": "Battle of Changping",
+        "wrong1": "Battle of Maling",
+        "wrong2": "Battle of Guiling",
+        "wrong3": "Battle of Julu"
+      }
+    }
+  }
+}
