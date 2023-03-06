@@ -30,11 +30,11 @@ body {
 
 #title {
   text-align: center;
-  font-size: 6rem;
   font-family: "Bangers", cursive;
   font-style: normal;
   font-weight: 400;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  padding: 0 10px;
   line-height: 112px;
   text-align: center;
   color: white;
