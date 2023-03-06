@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/home.css" />
-    <script src="../javascripts/check-user.js"></script>
+    <!-- <script src="../javascripts/check-user.js"></script> -->
     <script defer src="../javascripts/home.js"></script>
     <title>History Mystery - Home</title>
 </head>
@@ -17,9 +17,18 @@
       <h1 id="title">Choose which era you'd like to be quizzed on!</h1>
     </header>
     <div id="container">
-      <button class="era-btn">Era 1</button>
-      <button class="era-btn">Era 2</button>
-      <button class="era-btn">Era 3</button>
+      <button class="era-btn">World War 1 & 2</button>
+      <button class="era-btn">Medieval Time Period</button>
+      <button class="era-btn">Warring States of China</button>
+    </div>
+    <div id="difficulty-modal" class="modal">
+      <div class="modal-content">
+          <p id="modal-text">Select a difficulty!</p>
+          <button id="easy-difficulty-modal-btn" difficulty="easy" class="difficulty-btn modal-btn">Easy</button>
+          <button id="medium-difficulty-modal-btn" difficulty="medium" class="difficulty-btn modal-btn">Medium</button>
+          <button id="hard-difficulty-modal-btn" difficulty="hard" class="difficulty-btn modal-btn">Hard</button>
+          <button id="close-difficulty-modal-btn" class="close-difficulty-btn modal-btn">Cancel</button>
+      </div>
     </div>
 </body>
 </html>
