@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Inter&family=Tilt+Neon&family=Zeyada&display=swap");
+
+body {
+  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+
+#container {
+  width: 70%;
+  height: 60%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 150px; right: 0;
+  padding: 35px;
+  background-color: #e9e9e9;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+#user-results {
+  width: 30%;
+  height: 87.5%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  padding: 0;
+  background-color: #e9e9e9;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+              -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+}
+
+#skill {
+  height: 160px;
+  position: relative;
+  display: flex;
+  top: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+#outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+              -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+#inner {
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+              inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+              -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+              0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+              0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number {
+  font-size: 40px;
+  margin: auto;
+  color: #5f5f5f;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Tilt Neon', cursive;
+}
+
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: spin 2s linear forwards
+}
+
+svg {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr.rounded {
+  position: relative;
+  top: 20%;
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  width: 80%;
+}
+
+#text-container {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#text-container span {
+  font-family: 'Tilt Neon', cursive;
+  text-align: left;
+  padding-left: 25%;
+  line-height: 50px;
+  font-size: 1.5rem;
+  color: #3d3d3d;
+}
+
+#leaderboard-results {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 62%;
+  height: 87.5%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  margin-right: 35px;
+  padding: 0;
+}
+
+#leaderboard-results div {
+  font-family: 'Tilt Neon', cursive;
+  flex-grow: 1;
+  font-size: 1.5rem;
+  color: #3d3d3d;
+  flex-direction: column;
+}
+
+.leaderboard-value {
+  display: inline-block;
+  width: 100%;
+  font-family: 'Tilt Neon', cursive;
+  flex-grow: 1;
+  font-size: 1.3rem;
+  color: #3d3d3d;
+}
+
+#return-home-btn {
+  background-color: rgb(107, 240, 158);
+  display: block;
+  margin: 0;
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  margin-top: 40px;
+  height: 50px;
+  border: none;
+  outline: 4px solid rgb(66, 66, 66);
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-family: 'Tilt Neon', cursive;
+  transition: all 0.15s ease-in-out;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#return-home-btn a {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+#return-home-btn:hover {
+  transform: translate(-50%, -50%) scale(1.06);
+}
+
+#return-home-btn:active {
+  transform: translate(-50%, -50%) scale(0.98);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes spin {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
