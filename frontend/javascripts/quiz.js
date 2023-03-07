@@ -110,9 +110,11 @@ const getNewQuestions = (e) => {
 const checkAnswer = (e) => {
   if (e.target.textContent == selectedQuestions[questionIndex - 1].answer) {
     score++
-    modalText.textContent = "CORRECT ANSWER!"
+    modalText.textContent = "CORRECT ANSWER!";
+    resultModal.style.backgroundColor = "lightgreen";
   } else {
-    modalText.textContent = "WRONG ANSWER!"
+    modalText.textContent = "WRONG ANSWER!";
+    resultModal.style.backgroundColor = "#F52F36";
   }
 }
 
