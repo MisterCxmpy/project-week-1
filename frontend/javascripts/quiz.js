@@ -14,6 +14,7 @@ let questionCount = 0;
 let width = 0;
 
 let timeOver = false
+let checkingAnswer = false
 
 async function fetchQuizData(era, difficulty) {
   try {
@@ -66,6 +67,8 @@ const getQuestions = (era, diff) => {
 const getNewQuestions = (e) => {
   width = 0
 
+  checkingAnswer = false
+
   if (timeOver) {
     startCountdown();
     timeOver = false
@@ -108,6 +111,9 @@ const getNewQuestions = (e) => {
 }
 
 const checkAnswer = (e) => {
+
+  checkingAnswer = true
+
   if (e.target.textContent == selectedQuestions[questionIndex - 1].answer) {
     score++
     modalText.textContent = "CORRECT ANSWER!";
@@ -123,13 +129,12 @@ const startCountdown = (e) => {
   interval = setInterval(frame, 10);
 
   function frame() {
+    if (checkingAnswer) return
     if (width >= 1500) {
       clearInterval(interval);
-      if (modalText.textContent == ""){
-        modalText.textContent = "TIMER RAN OUT!"
-        timeOver = true
-        openModal()
-      }
+      modalText.textContent = "TIMER RAN OUT!"
+      timeOver = true
+      openModal()
     } else {
       width++;
       progressTimer.style.width = (width) / 15 + '%';
