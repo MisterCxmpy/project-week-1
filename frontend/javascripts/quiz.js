@@ -3,8 +3,8 @@ const answersBtn = document.querySelectorAll(".answer-btn");
 const resultModal = document.querySelector("#result-modal")
 const progressTimer = document.querySelector("#progress-timer")
 const modalContent = document.querySelector(".modal-content")
-const modalText = document.querySelector(".modal-content h1")
-const nextBtn = document.querySelector(".modal-content button")
+const modalText = document.querySelector("#modal-text")
+const nextBtn = document.querySelector("#next-btn")
 
 let score = 0;
 let hasStarted = false;
@@ -13,7 +13,7 @@ let selectedQuestions = [];
 let questionCount = 0;
 let width = 0;
 
-let timeOver = 0
+let timeOver = false
 
 async function fetchQuizData(era, difficulty) {
   try {
@@ -65,6 +65,16 @@ const getQuestions = (era, diff) => {
 
 const getNewQuestions = (e) => {
   width = 0
+
+  if (timeOver) {
+    startCountdown();
+    timeOver = false
+  }
+
+  if (questionIndex + 2 > questionCount) {
+    nextBtn.textContent = "See results"
+  }
+
   resultModal.style.display = "none";
   if (questionIndex < questionCount) {
     title.textContent = selectedQuestions[questionIndex].question;
@@ -92,7 +102,7 @@ const getNewQuestions = (e) => {
   
     questionIndex++;
   } else {
-    console.log("Quiz over!")
+    window.location.href = `result.html`;
   }
 
 }
@@ -100,27 +110,27 @@ const getNewQuestions = (e) => {
 const checkAnswer = (e) => {
   if (e.target.textContent == selectedQuestions[questionIndex - 1].answer) {
     score++
-    modalText.textContent = "CORRECT!"
+    modalText.textContent = "CORRECT ANSWER!"
   } else {
-    modalText.textContent = "WRONG!"
+    modalText.textContent = "WRONG ANSWER!"
   }
 }
 
 const startCountdown = (e) => {
 
-  interval = setInterval(frame, 150);
+  interval = setInterval(frame, 10);
 
   function frame() {
-    if (width >= 100) {
-      width = 0
+    if (width >= 1500) {
       clearInterval(interval);
       if (modalText.textContent == ""){
         modalText.textContent = "TIMER RAN OUT!"
+        timeOver = true
         openModal()
       }
     } else {
       width++;
-      progressTimer.style.width = width + '%';
+      progressTimer.style.width = (width) / 15 + '%';
     }
   }
 };
@@ -130,6 +140,7 @@ const openModal = (e) => {
 }
 
 nextBtn.addEventListener("click", getNewQuestions)
+
 
 answersBtn.forEach(btn => {
   btn.addEventListener("click", checkAnswer)
