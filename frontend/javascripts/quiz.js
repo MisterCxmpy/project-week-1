@@ -1,11 +1,19 @@
-const timerValue = document.querySelector("#timer-value");
 const title = document.querySelector("#title");
 const answersBtn = document.querySelectorAll(".answer-btn");
+const resultModal = document.querySelector("#result-modal")
+const progressTimer = document.querySelector("#progress-timer")
+const modalContent = document.querySelector(".modal-content")
+const modalText = document.querySelector(".modal-content h1")
+const nextBtn = document.querySelector(".modal-content button")
 
+let score = 0;
 let hasStarted = false;
 let questionIndex = 0;
-let selectedQuestions = []
-let questionCount = 0
+let selectedQuestions = [];
+let questionCount = 0;
+let width = 0;
+
+let timeOver = 0
 
 async function fetchQuizData(era, difficulty) {
   try {
@@ -56,6 +64,8 @@ const getQuestions = (era, diff) => {
 };
 
 const getNewQuestions = (e) => {
+  width = 0
+  resultModal.style.display = "none";
   if (questionIndex < questionCount) {
     title.textContent = selectedQuestions[questionIndex].question;
   
@@ -89,25 +99,42 @@ const getNewQuestions = (e) => {
 
 const checkAnswer = (e) => {
   if (e.target.textContent == selectedQuestions[questionIndex - 1].answer) {
-    console.log("Correct answer!")
+    score++
+    modalText.textContent = "CORRECT!"
   } else {
-    console.log("Wrong answer!")
+    modalText.textContent = "WRONG!"
   }
 }
 
 const startCountdown = (e) => {
-  var value = parseInt(timerValue.textContent);
-  setInterval(() => {
-    if (value > 0) {
-      value--;
-      timerValue.textContent = value;
+
+  interval = setInterval(frame, 150);
+
+  function frame() {
+    if (width >= 100) {
+      width = 0
+      clearInterval(interval);
+      if (modalText.textContent == ""){
+        modalText.textContent = "TIMER RAN OUT!"
+        openModal()
+      }
+    } else {
+      width++;
+      progressTimer.style.width = width + '%';
     }
-  }, 1000);
+  }
 };
+
+const openModal = (e) => {
+  resultModal.style.display = "block"
+}
+
+nextBtn.addEventListener("click", getNewQuestions)
 
 answersBtn.forEach(btn => {
   btn.addEventListener("click", checkAnswer)
-  btn.addEventListener("click", getNewQuestions)
+  btn.addEventListener("click", openModal)
+  // btn.addEventListener("click", getNewQuestions)
 });
 
 startCountdown();
