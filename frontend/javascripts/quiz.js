@@ -2,6 +2,10 @@ const title = document.querySelector("#title");
 const answersBtn = document.querySelectorAll(".answer-btn");
 const resultModal = document.querySelector("#result-modal")
 const progressTimer = document.querySelector("#progress-timer")
+const modalContent = document.querySelector(".modal-content")
+const correctAns = document.querySelector("#correctans")
+const wrongAns = document.querySelector("#wrongans")
+const timerModal = document.querySelector("#timer")
 
 let score = 0;
 let hasStarted = false;
@@ -9,6 +13,9 @@ let questionIndex = 0;
 let selectedQuestions = [];
 let questionCount = 0;
 let width = 0;
+let answerCorrect = false;
+let timerRanOut = false;
+let modalOpened = false;
 
 async function fetchQuizData(era, difficulty) {
   try {
@@ -59,6 +66,8 @@ const getQuestions = (era, diff) => {
 };
 
 const getNewQuestions = (e) => {
+  answerCorrect = false
+  modalOpened = false
   if (questionIndex < questionCount) {
     title.textContent = selectedQuestions[questionIndex].question;
   
@@ -93,6 +102,7 @@ const getNewQuestions = (e) => {
 const checkAnswer = (e) => {
   if (e.target.textContent == selectedQuestions[questionIndex - 1].answer) {
     score++
+    answerCorrect = true
     console.log("Correct answer!")
   } else {
     console.log("Wrong answer!")
@@ -106,9 +116,13 @@ const startCountdown = (e) => {
   function frame() {
     if (width >= 100) {
       clearInterval(interval);
-      openModal()
+      if (modalOpened === false){
+        timerRanOut = true;
+        openModal()
+      }
     } else {
       width++;
+      timerRanOut = false;
       progressTimer.style.width = width + '%';
     }
   }
@@ -116,15 +130,22 @@ const startCountdown = (e) => {
 
 const openModal = (e) => {
   resultModal.style.display = "block"
+  if (timerRanOut === true) {
+    timerModal.style.display = "block"
+  } else if(answerCorrect === true){
+    modalOpened = true;
+    correctAns.style.display = "block";
+  } else {
+    wrongAns.style.display = "block";
+    modalOpened = true;
+  }
 }
-  
+
 answersBtn.forEach(btn => {
-  btn.addEventListener("click", openModal)
   btn.addEventListener("click", checkAnswer)
+  btn.addEventListener("click", openModal)
   // btn.addEventListener("click", getNewQuestions)
 });
 
 startCountdown();
 fetchQuizData(localStorage.getItem("era"), localStorage.getItem("difficulty"));
-
-
