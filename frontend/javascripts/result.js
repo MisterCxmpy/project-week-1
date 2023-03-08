@@ -7,6 +7,7 @@ const circle = document.querySelector("circle")
 
 const eraText = document.querySelector("#era-text");
 const difficultyText = document.querySelector("#difficulty-text");
+const questionsMissedText = document.querySelector("#questions-missed-text");
 const timeTakenText = document.querySelector("#time-taken-text");
 
 let leaderboard = [];
@@ -51,11 +52,11 @@ const createLeaderboardTable = () => {
 
     let _era = document.createElement("span");
     _era.classList = "leaderboard-value";
-    _era.textContent = _leaderboard[i]["era"];
+    _era.textContent = convertEraNames(_leaderboard[i])
 
     let _difficulty = document.createElement("span");
     _difficulty.classList = "leaderboard-value";
-    _difficulty.textContent = _leaderboard[i]["difficulty"];
+    _difficulty.textContent = convertDifficultyNames(_leaderboard[i]);
 
     participants.appendChild(_participants);
     scores.appendChild(_scores);
@@ -64,15 +65,45 @@ const createLeaderboardTable = () => {
   }
 };
 
+const convertEraNames = (leaderboard) => {
+  switch (leaderboard["era"]) {
+    case "ww1and2":
+      return `World War 1 & 2`;
+    case "medieval":
+      return `Medieval`;
+    case "warringstatesofchina":
+      return `Warring States of China`;
+    default:
+      break;
+  }
+}
+
+const convertDifficultyNames = (leaderboard) => {
+  switch (leaderboard["difficulty"]) {
+    case "easy":
+      return `Easy`;
+    case "medium":
+      return `Medium`;
+    case "hard":
+      return `Hard`;
+    default:
+      break;
+  }
+}
+
 const loadScore = () => {
   addToLeaderboard();
 
-  const percentage = leaderboard[0]["scores"].correctScore / leaderboard[0]["scores"].questionCount * 100
+  const percentage = (leaderboard[0]["scores"].correctScore / leaderboard[0]["scores"].questionCount)
   document.documentElement.style.setProperty('--stroke-dashoffset', (600 - 600 * percentage));
 
   number.textContent = `${leaderboard[0]["scores"].correctScore}/${leaderboard[0]["scores"].questionCount}`;
-  eraText.textContent = `Era: ${leaderboard[0]["era"]}`;
-  difficultyText.textContent = `Difficulty: ${leaderboard[0]["difficulty"]}`;
+
+  convertEraNames(eraText, leaderboard[0])
+
+  eraText.textContent = `Era: ${convertEraNames(leaderboard[0])}`;
+  difficultyText.textContent = `Difficulty: ${convertDifficultyNames(leaderboard[0])}`;
+  questionsMissedText.textContent = `Missed Questions: ${leaderboard[0]["scores"].questionsMissedScore}`;
   createLeaderboardTable();
 };
 
