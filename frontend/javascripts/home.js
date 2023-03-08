@@ -34,3 +34,5 @@ eraBtns.forEach(btn => {
 difficultyBtns.forEach(btn => {
   btn.addEventListener("click", loadQuizPage)
 });
+
+
