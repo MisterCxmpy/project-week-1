@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Inter&family=Tilt+Neon&family=Zeyada&display=swap");
 
-body .preload *{
+body .preload * {
   animation-duration: 0s !important;
   -webkit-animation-duration: 0s !important;
-  transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;}
+  transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
+}
 
 body {
   background-image: linear-gradient(to right, #8360c3, #2ebf91);
@@ -159,7 +160,7 @@ body {
   0% {
     transform: translate(-50%, -50%) scale(0);
   }
-  
+
   100% {
     transform: translate(-50%, -50%) scale(1);
   }
@@ -180,6 +181,29 @@ footer {
 a {
   text-decoration: none;
   color: #3d3d3d;
+}
+
+.hidden {
+  color: transparent;
+}
+
+#Scrolling-text {
+  transform: translateX(100%);
+  animation: my-animation 20s linear infinite;
+  font-family: "Tilt Neon", cursive;
+  color: #3d3d3d;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+@keyframes my-animation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 
@@ -220,8 +244,9 @@ a {
     padding: 20px;
     padding-bottom: 50px;
   }
-  
-  .difficulty-btn, #close-difficulty-modal-btn {
+
+  .difficulty-btn,
+  #close-difficulty-modal-btn {
     width: 30%;
     margin-top: 25px;
     font-size: 1.3rem;
@@ -237,9 +262,11 @@ a {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
