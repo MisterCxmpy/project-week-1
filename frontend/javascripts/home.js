@@ -1,9 +1,7 @@
 const eraBtns = document.querySelectorAll(".era-btn")
 const closeDifficultyModal = document.querySelector("#close-difficulty-modal-btn")
 const difficultyModal = document.querySelector("#difficulty-modal")
-const leaderboard = document.querySelector("#leaderboard")
 const difficultyBtns = document.querySelectorAll(".difficulty-btn")
-
 const leaderboard = document.querySelector("#Scrolling-text")
 
 let era = null
@@ -98,5 +96,5 @@ const loadLeaderboardInfo = () => {
     span.textContent = " - - - - "
     leaderboard.appendChild(span)
   }
-
+}
 loadLeaderboardInfo()
