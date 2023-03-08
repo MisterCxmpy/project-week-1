@@ -188,38 +188,48 @@ a {
   #title {
     font-size: 2.5rem;
     padding-top: 75px;
+    padding: 75px 20px 20px 0;
   }
 
   #container {
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    margin: 0 auto;
     border-radius: 50;
     border: #232323 2px solid;
     padding: 1px;
-    top: 75px;
-    overflow-y: auto;
-    box-sizing: border-box;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .era-btn {
-    width: 45%;
+    box-sizing: border-box;
+    flex: 1;
     height: 125px;
+    padding: 10px 0;
     margin: 20px;
     font-size: 1.5rem;
     display: inline-block
   }
 
   .modal {
-    width: 90%;
+    width: 85%;
+    margin: 0 auto;
     height: 200px;
     padding: 20px;
+    padding-bottom: 50px;
   }
-
+  
   .difficulty-btn, #close-difficulty-modal-btn {
-    width: 40%;
-    margin-top: 20px;
+    width: 30%;
+    margin-top: 25px;
     font-size: 1.3rem;
     height: 40px;
+  }
+
+  #close-difficulty-modal-btn {
+    margin-top: 30px;
   }
 }
 

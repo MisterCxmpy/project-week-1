@@ -6,6 +6,7 @@ const modalContent = document.querySelector(".modal-content")
 const modalText = document.querySelector("#modal-text")
 const nextBtn = document.querySelector("#next-btn")
 
+let questionsMissed = 0
 let score = 0;
 let hasStarted = false;
 let questionIndex = 0;
@@ -76,6 +77,7 @@ const getNewQuestions = (e) => {
 
   if (questionIndex + 2 > questionCount) {
     nextBtn.textContent = "See results"
+    nextBtn.style.backgroundColor = "#E7FFAC"
   }
 
   resultModal.style.display = "none";
@@ -105,6 +107,8 @@ const getNewQuestions = (e) => {
   
     questionIndex++;
   } else {
+    // game over!
+    localStorage.setItem("scores", JSON.stringify({correctScore: score, questionsMissedScore: questionsMissed, questionCount: questionCount}))
     window.location.href = `result.html`;
   }
 
@@ -134,6 +138,7 @@ const startCountdown = (e) => {
       clearInterval(interval);
       modalText.textContent = "TIMER RAN OUT!"
       timeOver = true
+      questionsMissed++
       openModal()
     } else {
       width++;
@@ -147,7 +152,6 @@ const openModal = (e) => {
 }
 
 nextBtn.addEventListener("click", getNewQuestions)
-
 
 answersBtn.forEach(btn => {
   btn.addEventListener("click", checkAnswer)
