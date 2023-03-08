@@ -120,7 +120,7 @@ const checkAnswer = (e) => {
     resultModal.style.backgroundColor = "lightgreen";
   } else {
     modalText.textContent = "WRONG ANSWER!";
-    resultModal.style.backgroundColor = "#F52F36";
+    resultModal.style.backgroundColor = "#FF574E";
   }
 }
 
