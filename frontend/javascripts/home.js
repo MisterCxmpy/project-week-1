@@ -1,9 +1,7 @@
 const eraBtns = document.querySelectorAll(".era-btn")
 const closeDifficultyModal = document.querySelector("#close-difficulty-modal-btn")
 const difficultyModal = document.querySelector("#difficulty-modal")
-const leaderboard = document.querySelector("#leaderboard")
 const difficultyBtns = document.querySelectorAll(".difficulty-btn")
-
 const leaderboard = document.querySelector("#Scrolling-text")
 
 let era = null
@@ -39,8 +37,6 @@ difficultyBtns.forEach(btn => {
 });
 
 const _leaderboard = (localStorage.getItem("leaderboard"));
-
-// leaderboard.textContent = `This is ${_leaderboard}`
 
 const convertEraNames = (leaderboard) => {
   switch (leaderboard["era"]) {
@@ -98,5 +94,6 @@ const loadLeaderboardInfo = () => {
     span.textContent = " - - - - "
     leaderboard.appendChild(span)
   }
-
+}
+  
 loadLeaderboardInfo()
