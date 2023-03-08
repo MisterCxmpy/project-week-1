@@ -1,6 +1,7 @@
 const eraBtns = document.querySelectorAll(".era-btn")
 const closeDifficultyModal = document.querySelector("#close-difficulty-modal-btn")
 const difficultyModal = document.querySelector("#difficulty-modal")
+const leaderboard = document.querySelector("#leaderboard")
 const difficultyBtns = document.querySelectorAll(".difficulty-btn")
 
 let era = null
@@ -35,4 +36,5 @@ difficultyBtns.forEach(btn => {
   btn.addEventListener("click", loadQuizPage)
 });
 
+leaderboard.textContent = localStorage.getItem("leaderboard")
 
