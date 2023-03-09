@@ -2,7 +2,7 @@ const eraBtns = document.querySelectorAll(".era-btn")
 const closeDifficultyModal = document.querySelector("#close-difficulty-modal-btn")
 const difficultyModal = document.querySelector("#difficulty-modal")
 const difficultyBtns = document.querySelectorAll(".difficulty-btn")
-const leaderboard = document.querySelector("#Scrolling-text")
+const leaderboard = document.querySelector("#scrolling-text")
 
 let era = null
 let difficulty = null
@@ -64,30 +64,22 @@ const convertDifficultyNames = (leaderboard) => {
   }
 }
 
+// allows us to dynamically create leaderboard values
+function createLeaderboardValue(textContent) {
+  const leaderboardValue = document.createElement("span");
+  leaderboardValue.classList = "leaderboard-value";
+  leaderboardValue.textContent = textContent;
+  return leaderboardValue;
+}
+
 const loadLeaderboardInfo = () => {
   const _leaderboard = JSON.parse(localStorage.getItem("leaderboard"));
 
   for (let i = 0; i < _leaderboard.length; i++) {
-    let _username = document.createElement("span");
-    _username.classList = "leaderboard-value";
-    _username.textContent = `Name: ${_leaderboard[i]["name"]} - `;
-
-    let _scores = document.createElement("span");
-    _scores.classList = "leaderboard-value";
-    _scores.textContent = `Score: ${_leaderboard[i]["scores"].correctScore} - `;
-
-    let _era = document.createElement("span");
-    _era.classList = "leaderboard-value";
-    _era.textContent = `Era: ${convertEraNames(_leaderboard[i])} - `;
-
-    let _difficulty = document.createElement("span");
-    _difficulty.classList = "leaderboard-value";
-    _difficulty.textContent = ` Difficulty: ${convertDifficultyNames(_leaderboard[i])}`;
-
-    leaderboard.appendChild(_username);
-    leaderboard.appendChild(_scores);
-    leaderboard.appendChild(_era);
-    leaderboard.appendChild(_difficulty);
+    leaderboard.appendChild(createLeaderboardValue(`Name: ${_leaderboard[i]["name"]} - `));
+    leaderboard.appendChild(createLeaderboardValue(`Score: ${_leaderboard[i]["scores"].correctScore} - `));
+    leaderboard.appendChild(createLeaderboardValue(`Era: ${convertEraNames(_leaderboard[i])} - `));
+    leaderboard.appendChild(createLeaderboardValue(`Difficulty: ${convertDifficultyNames(_leaderboard[i])}`));
 
     let span = document.createElement("span")
     span.classList = "hidden"
