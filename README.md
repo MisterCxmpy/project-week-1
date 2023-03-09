@@ -1,8 +1,10 @@
 # HISTORY MYSTERY
 ## About
 *Our school education system is failing us...*
-There is a noticeable trend where students are lacking engagement in non-STEM subject. 
+There is a noticeable trend where students are lacking engagement in non-STEM subject.
+
 ![Alt Text](https://media.giphy.com/media/CWQxY7xVoPbq/giphy.gif)
+
 *Which is why we are here!*
 This repository contains our first project on making learning fun again. We
 designed a text based quiz game that contains the fun element that will keep people engaged with learning more about history.
