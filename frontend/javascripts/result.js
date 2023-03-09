@@ -42,26 +42,30 @@ const createLeaderboardTable = () => {
   const _leaderboard = JSON.parse(localStorage.getItem("leaderboard"));
 
   for (let i = 0; i < _leaderboard.length; i++) {
-    let _participants = document.createElement("span");
-    _participants.classList = "leaderboard-value";
-    _participants.textContent = _leaderboard[i]["name"];
 
-    let _scores = document.createElement("span");
-    _scores.classList = "leaderboard-value";
-    _scores.textContent = _leaderboard[i]["scores"].correctScore;
+    if (_leaderboard[i]["era"] == localStorage.getItem("era") && _leaderboard[i]["difficulty"] == localStorage.getItem("difficulty")){
+      let _participants = document.createElement("span");
+      _participants.classList = "leaderboard-value";
+      _participants.textContent = _leaderboard[i]["name"];
+  
+      let _scores = document.createElement("span");
+      _scores.classList = "leaderboard-value";
+      _scores.textContent = _leaderboard[i]["scores"].correctScore;
+  
+      let _era = document.createElement("span");
+      _era.classList = "leaderboard-value";
+      _era.textContent = convertEraNames(_leaderboard[i])
+  
+      let _difficulty = document.createElement("span");
+      _difficulty.classList = "leaderboard-value";
+      _difficulty.textContent = convertDifficultyNames(_leaderboard[i]);
+  
+      participants.appendChild(_participants);
+      scores.appendChild(_scores);
+      era.appendChild(_era);
+      difficulty.appendChild(_difficulty);
+    };
 
-    let _era = document.createElement("span");
-    _era.classList = "leaderboard-value";
-    _era.textContent = convertEraNames(_leaderboard[i])
-
-    let _difficulty = document.createElement("span");
-    _difficulty.classList = "leaderboard-value";
-    _difficulty.textContent = convertDifficultyNames(_leaderboard[i]);
-
-    participants.appendChild(_participants);
-    scores.appendChild(_scores);
-    era.appendChild(_era);
-    difficulty.appendChild(_difficulty);
   }
 };
 
