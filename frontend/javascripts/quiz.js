@@ -107,7 +107,6 @@ const getNewQuestions = (e) => {
   
     questionIndex++;
   } else {
-    // game over!
     localStorage.setItem("scores", JSON.stringify({correctScore: score, questionsMissedScore: questionsMissed, questionCount: questionCount}))
     window.location.href = `result.html`;
   }
