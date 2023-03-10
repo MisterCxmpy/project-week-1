@@ -1,4 +1,6 @@
-# HISTORY MYSTERY
+![Alt Text](./images/logo.png)
+
+<!-- # HISTORY MYSTERY -->
 ## About
 *Our school education system is failing us...*
 There is a noticeable trend where students are lacking engagement in non-STEM subject.
@@ -23,9 +25,9 @@ Now you can run the server
         npm run dev
  
 ## Technologies
-- node.js (version: 8.19.2)
-- HTML
-- CSS
+- HTML/CSS/JavaScript
+- Node.js (version: 8.19.2)
+
 
 ## Process
 
@@ -36,7 +38,6 @@ pending...
 pending...
 
 ## Preview...
-
 ![Alt Text](images/username.png)
 ![Alt Text](images/era-selection.png)
 ![Alt Text](images/questions.png)
@@ -44,16 +45,14 @@ pending...
 
 
 
+## Contributions:
 
-Screenshots/Images
-Wins & Challenges
-Could have:
-
-Badges
-Contribution guide
-Code snippets
-Bugs
-Future featuresimages\username.png
+- Cosgun Hussein
+- Steve Totev
+- Sheikh Khaled Ahmed
 
 
+## Future features
 
+ - Development of game integration with Unreal Engine
+ 
