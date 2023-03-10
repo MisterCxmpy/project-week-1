@@ -38,30 +38,23 @@ function addToLeaderboard() {
   localStorage.setItem("leaderboard", JSON.stringify(leaderboardData));
 }
 
+function createLeaderboardValue(textContent) {
+  const leaderboardValue = document.createElement("span");
+  leaderboardValue.classList = "leaderboard-value";
+  leaderboardValue.textContent = textContent;
+  return leaderboardValue;
+}
+
 const createLeaderboardTable = () => {
   const _leaderboard = JSON.parse(localStorage.getItem("leaderboard"));
 
   for (let i = 0; i < _leaderboard.length; i++) {
-    let _participants = document.createElement("span");
-    _participants.classList = "leaderboard-value";
-    _participants.textContent = _leaderboard[i]["name"];
-
-    let _scores = document.createElement("span");
-    _scores.classList = "leaderboard-value";
-    _scores.textContent = _leaderboard[i]["scores"].correctScore;
-
-    let _era = document.createElement("span");
-    _era.classList = "leaderboard-value";
-    _era.textContent = convertEraNames(_leaderboard[i])
-
-    let _difficulty = document.createElement("span");
-    _difficulty.classList = "leaderboard-value";
-    _difficulty.textContent = convertDifficultyNames(_leaderboard[i]);
-
-    participants.appendChild(_participants);
-    scores.appendChild(_scores);
-    era.appendChild(_era);
-    difficulty.appendChild(_difficulty);
+    if (_leaderboard[i]["era"] == localStorage.getItem("era") && _leaderboard[i]["difficulty"] == localStorage.getItem("difficulty")){
+      participants.appendChild(createLeaderboardValue(_leaderboard[i]["name"]));
+      scores.appendChild(createLeaderboardValue(_leaderboard[i]["scores"].correctScore));
+      era.appendChild(createLeaderboardValue(convertEraNames(_leaderboard[i])));
+      difficulty.appendChild(createLeaderboardValue(convertDifficultyNames(_leaderboard[i])));
+    };
   }
 };
 
@@ -98,13 +91,13 @@ const loadScore = () => {
   document.documentElement.style.setProperty('--stroke-dashoffset', (600 - 600 * percentage));
 
   number.textContent = `${leaderboard[0]["scores"].correctScore}/${leaderboard[0]["scores"].questionCount}`;
-
-  convertEraNames(eraText, leaderboard[0])
-
   eraText.textContent = `Era: ${convertEraNames(leaderboard[0])}`;
   difficultyText.textContent = `Difficulty: ${convertDifficultyNames(leaderboard[0])}`;
   questionsMissedText.textContent = `Missed Questions: ${leaderboard[0]["scores"].questionsMissedScore}`;
+
   createLeaderboardTable();
+
+  localStorage.removeItem("leaderboard")
 };
 
 loadScore();

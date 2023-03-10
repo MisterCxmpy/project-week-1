@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/index.css" />
     <script>
       localStorage.setItem("username", "")
@@ -22,6 +23,7 @@
           onkeypress="return event.keyCode != 13;"
           type="text"
           required
+          maxlength="16"
         />
         <span id="nick-name-label">Nickname</span>
       </form>
@@ -40,5 +42,6 @@
       </div>
     </div>
     <button id="clear-cache-btn">Clear Cache</button>
+    <button id="ee-btn" onclick="location.href='secret.html'">Secret</button>
   </body>
 </html>

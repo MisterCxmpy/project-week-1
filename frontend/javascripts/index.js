@@ -14,7 +14,7 @@ const getUser = (e) => {
   let data = localStorage.getItem("usernames");
   let usernameData = data ? JSON.parse(data) : [];
 
-  if (!username) {
+  if (!username || !username.replace(/\s/g, '').length) {
     errorModal.style.display = "block";
     return;
   };

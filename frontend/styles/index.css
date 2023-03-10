@@ -1,11 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Inter&family=Tilt+Neon&family=Zeyada&display=swap');
-
-body {
-  background-image: linear-gradient(to right, #8360c3, #2ebf91);
-  background-size: 400% 400%;
-  animation: gradient 30s ease infinite;
-}
-
 #container {
   position: relative;
   margin: auto;
@@ -21,7 +13,7 @@ body {
 #title {
   text-align: center;
   font-size: 6rem;
-  font-family: 'Bangers', cursive;
+  font-family: "Bangers", cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 128px;
@@ -66,22 +58,21 @@ body {
   height: 25px;
   font-size: 25px;
   margin: auto;
-  color: #7E7E7E;
+  color: #7e7e7e;
   text-align: center;
   font-style: italic;
-  font-family: 'Tilt Neon', cursive;
+  font-family: "Tilt Neon", cursive;
   transition: all 0.5s ease-in-out;
 }
 
-
 #nick-name-form input:focus ~ #nick-name-label,
-#nick-name-form input:valid ~ #nick-name-label{
-	top:-88px;
+#nick-name-form input:valid ~ #nick-name-label {
+  top: -88px;
   font-size: 20px;
 }
 
-#nick-name-form input:focus{
-	outline: 2px solid rgb(66, 66, 66);
+#nick-name-form input:focus {
+  outline: 2px solid rgb(66, 66, 66);
 }
 
 #start-btn {
@@ -96,7 +87,7 @@ body {
   text-align: center;
   font-size: 1.6rem;
   font-style: italic;
-  font-family: 'Tilt Neon', cursive;
+  font-family: "Tilt Neon", cursive;
   color: #3d3d3d;
   transition: all 0.15s ease-in-out;
   border-radius: 1rem;
@@ -108,19 +99,7 @@ body {
 }
 
 #start-btn:active {
-  transform: scale(.98);
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  transform: scale(0.98);
 }
 
 .modal {
@@ -141,7 +120,7 @@ body {
 .modal-content {
   text-align: center;
   font-size: 1.8rem;
-  font-family: 'Tilt Neon', cursive;
+  font-family: "Tilt Neon", cursive;
   color: #3d3d3d;
 }
 
@@ -157,7 +136,7 @@ body {
   text-align: center;
   font-size: 1.6rem;
   font-style: italic;
-  font-family: 'Tilt Neon', cursive;
+  font-family: "Tilt Neon", cursive;
   color: #3d3d3d;
   transition: all 0.15s ease-in-out;
   border-radius: 1rem;
@@ -170,36 +149,47 @@ body {
 
 #clear-cache-btn {
   position: absolute;
-  right:    5px;
-  bottom:   5px;
+  right: 5px;
+  bottom: 5px;
   padding: 5px;
-  
 }
 
+#ee-btn {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  padding: 5px;
+}
+
+
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate(-50%, -50%) translate3d(-1px, 0, 0) rotate(5deg);
   }
-  
-  20%, 80% {
+
+  20%,
+  80% {
     transform: translate(-50%, -50%) translate3d(2px, 0, 0) rotate(5deg);
   }
 
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate(-50%, -50%) translate3d(-4px, 0, 0) rotate(5deg);
   }
 
-  40%, 60% {
-    transform:translate(-50%, -50%) translate3d(4px, 0, 0) rotate(-5deg);
+  40%,
+  60% {
+    transform: translate(-50%, -50%) translate3d(4px, 0, 0) rotate(-5deg);
   }
 }
 
-@media screen and (max-device-width: 480px)
-and (orientation: portrait) {
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
   #title {
     text-align: center;
     font-size: 6rem;
-    font-family: 'Bangers', cursive;
+    font-family: "Bangers", cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 100px;
@@ -224,5 +214,4 @@ and (orientation: portrait) {
     border-radius: 25px;
     top: 0px;
   }
-  
 }
