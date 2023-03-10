@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Inter&family=Tilt+Neon&family=Zeyada&display=swap");
+
+body .preload * {
+  animation-duration: 0s !important;
+  -webkit-animation-duration: 0s !important;
+  transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s,
+    padding 0s, margin 0s !important;
+}
+
+body {
+  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
