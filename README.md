@@ -34,3 +34,26 @@ pending...
 ## License
 
 pending...
+
+## Preview...
+
+![Alt Text](images/username.png)
+![Alt Text](images/era-selection.png)
+![Alt Text](images/questions.png)
+![Alt Text](images/scoreboard.png)
+
+
+
+
+Screenshots/Images
+Wins & Challenges
+Could have:
+
+Badges
+Contribution guide
+Code snippets
+Bugs
+Future featuresimages\username.png
+
+
+
